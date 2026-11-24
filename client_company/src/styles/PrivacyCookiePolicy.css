@@ -1,0 +1,90 @@
+#main-privacy-cookie-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #box-info {
+        padding: 50px;
+
+        h1 {
+            margin-bottom: 5px;
+        }
+    }
+
+    #privacy-cookie-policy-container {
+        background-color: #F9FAFB;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        margin-bottom: 50px;
+
+        #privacy-cookie-policy-info {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 40px;
+            }
+
+            h2 {
+                margin-left: 10px;
+            }
+        }
+
+        ol {
+            margin: 0px;
+            padding: 0px;
+            list-style-position: inside;
+
+            li {
+                font-weight: 700;
+                margin-top: 15px;
+
+                p {
+                    font-weight: 300;
+                    text-align: left;
+                }
+            }
+        }
+
+        ul {
+            list-style: disc;
+
+            li {
+                font-weight: 300;
+                margin: 0px;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .margin-ul {
+            margin: 15px 0px 15px 0px;
+        }
+    }
+
+    #questions-about-box {
+        background-color: #D8E3D3;
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 0px 50px 0px 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #main-privacy-cookie-policy {
+        #privacy-cookie-policy-container {
+            width: 75%;
+        }
+    }
+}

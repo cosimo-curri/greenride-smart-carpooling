@@ -1,0 +1,108 @@
+footer {
+    background-color: #4E802E;
+    padding: 50px;
+    color: white;
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #c0c0c0;
+        margin: 20px 0px 20px 0px;
+    }
+
+    p {
+        font-size: 13px;
+        color: #c0c0c0;
+    }
+
+    #footer-content {
+        display: flex;
+        justify-content: space-between;
+
+        #footer-content-info {
+            div {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    height: 30px;
+                }
+
+                h3 {
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                text-align: left;
+                margin-top: 10px;
+            }
+
+            .footer-link {
+                text-decoration: underline;
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        #footer-content-contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            ul {
+                margin: 0px;
+                list-style: none;
+                padding: 0px;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    
+                    img {
+                        width: 15px;
+                        margin-right: 5px;
+                    }
+
+                    a {
+                        color: #c0c0c0;
+                    }
+                }
+            }
+
+            h4 {
+                color: white;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        #footer-content {
+            flex-direction: column;
+
+            #footer-content-info {
+                margin-bottom: 50px;
+
+                div {
+                    justify-content: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            #footer-content-contacts h4 {
+                text-align: center;
+            }
+        }
+    }
+}
